@@ -15,7 +15,8 @@ aws s3 ls >> resourceusage
 
 #AWS EC2 Instances
 echo"EC2 Instances"
-asw ec2 describe-instances|jq.'.Reservations[].Instances[].InstanceID'
+asw ec2 describe-instances
+#describe-instances|jq.'.Reservations[].Instances[].InstanceID'
 
 #AWS Lambda Function
 echo"Lambda Functions"
